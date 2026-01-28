@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawrence Tam Lok Hang | 音樂演奏及提琴製作</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* 英雄區背景圖 */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+                        url('https://lh3.googleusercontent.com/d/1sRDlEqJKQ7w3B4pu1WB6BikzOR0xCpAU');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #1a1a1a;
+        }
+        .nav-link:hover {
+            color: #d4af37;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .gold-text { color: #d4af37; }
+        .gold-bg { background-color: #d4af37; }
+        
+        .profile-img-container {
+            position: relative;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 導航欄 -->
+    <nav class="fixed w-full z-50 bg-black/90 text-white py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-md border-b border-gray-800">
+        <div class="text-xl font-bold serif tracking-wider gold-text">LAWRENCE TAM</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#home" class="nav-link">首頁</a>
+            <a href="#about" class="nav-link">個人簡介</a>
+            <a href="#qualifications" class="nav-link">專業資格</a>
+            <a href="#videos" class="nav-link">示範影片</a>
+            <a href="#craft" class="nav-link">提琴製作</a>
+            <a href="#contact" class="nav-link px-4 py-2 border border-[#d4af37] rounded-full gold-text hover:bg-[#d4af37] hover:text-black transition-all">立即聯絡</a>
+        </div>
+        <button class="md:hidden text-2xl" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- 手機選單 -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black z-40 hidden flex-col justify-center items-center space-y-8 text-white text-xl">
+        <a href="#home" onclick="toggleMenu()">首頁</a>
+        <a href="#about" onclick="toggleMenu()">個人簡介</a>
+        <a href="#qualifications" onclick="toggleMenu()">專業資格</a>
+        <a href="#videos" onclick="toggleMenu()">示範影片</a>
+        <a href="#craft" onclick="toggleMenu()">提琴製作</a>
+        <a href="#contact" onclick="toggleMenu()">聯絡我</a>
+    </div>
+
+    <!-- 英雄區 (Hero Section) -->
+    <section id="home" class="h-screen hero-section flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <h2 class="text-[#d4af37] text-lg md:text-xl mb-4 tracking-[0.2em] font-light uppercase">Cellist | Double Bassist | Luthier</h2>
+            <h1 class="text-white text-5xl md:text-7xl font-bold serif mb-6">Lawrence Tam Lok Hang</h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+                結合卓越演奏技巧與深厚提琴製作造詣，<br>為每一位學生開啟通往音樂藝術與職人工藝的大門。
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#about" class="gold-bg text-black font-bold px-8 py-3 rounded-sm hover:bg-yellow-600 transition-all">了解更多</a>
+                <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="border border-white text-white px-8 py-3 rounded-sm hover:bg-white hover:text-black transition-all">
+                    <i class="fab fa-youtube mr-2"></i>瀏覽 YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我 -->
+    <section id="about" class="py-20 px-6 md:px-20 bg-white border-b">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="aspect-[3/4] rounded-lg overflow-hidden border-8 border-white shadow-2xl profile-img-container">
+                     <img src="https://lh3.googleusercontent.com/d/1WXdgwymmxM2uQGGgeN1cJAglz5hSt7mT" 
+                          alt="Lawrence Tam Lok Hang" 
+                          class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-[#d4af37] p-8 hidden md:block shadow-lg">
+                    <p class="text-black font-bold text-3xl">15+</p>
+                    <p class="text-black text-sm uppercase tracking-widest font-bold">教學年資</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold serif mb-6">關於譚老師 (Lawrence Tam)</h3>
+                <p class="text-gray-600 mb-6 leading-loose">
+                    譚氏於 2013 年畢業於香港演藝學院，取得音樂學士學位，主修低音大提琴演奏。除了在舞台上的演奏，譚氏更曾遠赴美國芝加哥深造提琴製作工藝。
+                </p>
+                <p class="text-gray-600 mb-8 leading-loose">
+                    憑藉對樂器結構的精確理解與卓越的教學法，譚氏特別擅長啟蒙幼年學生，透過鼓勵與系統化的引導，讓學生在掌握技術的同時，也能真正熱愛音樂。
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="border-l-4 border-[#d4af37] pl-4">
+                        <h4 class="font-bold">HKAPA</h4>
+                        <p class="text-sm text-gray-500">音樂學士學位</p>
+                    </div>
+                    <div class="border-l-4 border-[#d4af37] pl-4">
+                        <h4 class="font-bold">CSVM</h4>
+                        <p class="text-sm text-gray-500">提琴製作專業畢業</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專業資格 -->
+    <section id="qualifications" class="py-20 bg-gray-50 px-6 md:px-20">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h3 class="text-3xl font-bold serif mb-4 underline decoration-[#d4af37] decoration-4 underline-offset-8">專業資格與資歷</h3>
+        </div>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 shadow-sm card border-t-4 border-[#d4af37]">
+                <i class="fas fa-graduation-cap text-3xl gold-text mb-6"></i>
+                <h4 class="text-xl font-bold mb-4">學術及文憑</h4>
+                <ul class="text-gray-600 space-y-3 text-sm">
+                    <li>• 香港演藝學院 音樂學士 (低音大提琴)</li>
+                    <li>• 師承名家宗小謙老師主修低音大提琴</li>
+                    <li>• 聖三一學院 ATCL 大提琴文憑</li>
+                    <li>• 聖三一學院 ATCL 低音大提琴文憑</li>
+                    <li>• 英國皇家音樂學院 鋼琴六級</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 shadow-md card border-t-4 border-[#d4af37]">
+                <i class="fas fa-chalkboard-teacher text-3xl gold-text mb-6"></i>
+                <h4 class="text-xl font-bold mb-4">教學經驗</h4>
+                <ul class="text-gray-600 space-y-3 text-sm">
+                    <li>• 康文署音樂事務處導師 (2010-2019)</li>
+                    <li>• 多間中小學低音大提琴/大提琴導師</li>
+                    <li>• 多間學校樂團指揮</li>
+                    <li>• 指導 5 歲學生通過 5 級考級</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 shadow-md card border-t-4 border-[#d4af37]">
+                <i class="fas fa-tools text-3xl gold-text mb-6"></i>
+                <h4 class="text-xl font-bold mb-4">專業工藝</h4>
+                <ul class="text-gray-600 space-y-3 text-sm">
+                    <li>• Chicago School of Violin Making 畢業</li>
+                    <li>• 師承名家 Antoine Nédélec</li>
+                    <li>• 破格提前完成三年制工藝課程</li>
+                    <li>• 提琴維修、調整與製作專家</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube 連結區 -->
+    <section id="videos" class="py-20 bg-white px-6 md:px-20 border-b">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-bold serif mb-6">教學與示範片段</h3>
+            <p class="text-gray-600 mb-10 leading-relaxed">
+                我會定期在個人頻道分享低音大提琴、大提琴的演奏技巧及練習指引。<br>歡迎訂閱以獲取最新的教學資源。
+            </p>
+            
+            <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="group inline-flex flex-col items-center">
+                <div class="w-24 h-24 bg-red-600 text-white rounded-full flex items-center justify-center text-4xl shadow-xl group-hover:scale-110 transition-transform mb-4">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-800 group-hover:text-red-600 transition-colors">@lawrencetambass</span>
+                <span class="text-gray-500 mt-2 text-sm">點擊前往 YouTube 頻道瀏覽影片</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 提琴製作專區 (Craftsmanship) -->
+    <section id="craft" class="py-24 bg-black text-white px-6 md:px-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-bold serif mb-6 gold-text italic">Luthiery & Artistry</h3>
+            <h4 class="text-xl mb-8">不只是演奏家，更是樂器醫師與職人。</h4>
+            <p class="text-gray-400 mb-10 leading-loose text-lg">
+                在芝加哥期間，隨著名造琴大賽評判 Antoine Nédélec 及資深導師 Kristin Siegfried-Ballenger 深造，專研小、中、大提琴製作。這種背景讓譚老師能從物理構造層面解決學生的音色問題。
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-8 text-left max-w-2xl mx-auto">
+                <div class="flex items-start gap-4 p-4 border border-gray-800 rounded-lg flex-1">
+                    <i class="fas fa-check gold-text mt-1"></i>
+                    <p>精通提琴音色調整 (Sound Adjustment)</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 border border-gray-800 rounded-lg flex-1">
+                    <i class="fas fa-check gold-text mt-1"></i>
+                    <p>專業弦樂器維修與保養顧問</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡區域 -->
+    <section id="contact" class="py-24 bg-gray-900 text-white px-6 md:px-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-4xl font-bold serif mb-8 gold-text">聯絡及諮詢</h3>
+            <p class="text-gray-400 mb-12 text-lg">無論是預約樂器課程、提琴維修諮詢或演出邀約，歡迎隨時聯絡。</p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
+                <!-- Email -->
+                <a href="mailto:lawrence.tam@chicagoviolinhk.com" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
+                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center text-black text-3xl group-hover:bg-yellow-500">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-bold tracking-widest mb-1">電子郵件</p>
+                        <p class="text-xl font-medium">lawrence.tam@chicagoviolinhk.com</p>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/85264473995" target="_blank" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
+                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center text-black text-3xl group-hover:bg-yellow-500">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-bold tracking-widest mb-1">WhatsApp 諮詢</p>
+                        <p class="text-xl font-medium">+852 6447 3995</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 腳部 -->
+    <footer class="bg-black py-10 text-center text-gray-600 text-sm border-t border-gray-800">
+        <p class="mb-6">© 2026 Lawrence Tam Lok Hang. All Rights Reserved.</p>
+        <div class="flex justify-center space-x-10 text-2xl">
+            <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/85264473995" target="_blank" class="hover:text-green-500 transition-colors"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:lawrence.tam@chicagoviolinhk.com" class="hover:text-[#d4af37] transition-colors"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+    </script>
+</body>
+</html>
