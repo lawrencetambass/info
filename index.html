@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lawrence Tam Lok Hang | 音樂演奏及提琴製作</title>
+
+    <!-- Facebook / Open Graph Meta Tags (用於社交媒體分享預覽) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="您的網址連結">
+    <meta property="og:title" content="Lawrence Tam Lok Hang | 音樂演奏及提琴製作">
+    <meta property="og:description" content="結合卓越演奏技巧與深厚提琴製作造詣，為每一位學生開啟通往音樂藝術與職人工藝的大門。">
+    <!-- 使用您提供的 Hero Section 圖片作為分享縮圖 -->
+    <meta property="og:image" content="https://lh3.googleusercontent.com/d/1sRDlEqJKQ7w3B4pu1WB6BikzOR0xCpAU">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lawrence Tam Lok Hang | 音樂演奏及提琴製作">
+    <meta name="twitter:description" content="結合卓越演奏技巧與深厚提琴製作造詣，為每一位學生開啟通往音樂藝術與職人工藝的大門。">
+    <meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1sRDlEqJKQ7w3B4pu1WB6BikzOR0xCpAU">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -45,13 +60,18 @@
     <!-- 導航欄 -->
     <nav class="fixed w-full z-50 bg-black/90 text-white py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-md border-b border-gray-800">
         <div class="text-xl font-bold serif tracking-wider gold-text">LAWRENCE TAM</div>
-        <div class="hidden md:flex space-x-8 text-sm font-medium">
+        <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
             <a href="#home" class="nav-link">首頁</a>
             <a href="#about" class="nav-link">個人簡介</a>
             <a href="#qualifications" class="nav-link">專業資格</a>
             <a href="#videos" class="nav-link">示範影片</a>
             <a href="#craft" class="nav-link">提琴製作</a>
-            <a href="#contact" class="nav-link px-4 py-2 border border-[#d4af37] rounded-full gold-text hover:bg-[#d4af37] hover:text-black transition-all">立即聯絡</a>
+            <!-- 導航欄加入社交媒體圖標 -->
+            <div class="flex space-x-4 border-l border-gray-700 pl-6 ml-2">
+                <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="hover:text-[#1877F2] transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
+            </div>
+            <a href="#contact" class="nav-link px-4 py-2 border border-[#d4af37] rounded-full gold-text hover:bg-[#d4af37] hover:text-black transition-all ml-4">立即聯絡</a>
         </div>
         <button class="md:hidden text-2xl" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
     </nav>
@@ -63,7 +83,11 @@
         <a href="#qualifications" onclick="toggleMenu()">專業資格</a>
         <a href="#videos" onclick="toggleMenu()">示範影片</a>
         <a href="#craft" onclick="toggleMenu()">提琴製作</a>
-        <a href="#contact" onclick="toggleMenu()">聯絡我</a>
+        <div class="flex space-x-8 text-3xl pt-4">
+            <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@lawrencetambass" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <a href="#contact" onclick="toggleMenu()" class="px-8 py-2 border border-[#d4af37] gold-text">聯絡我</a>
     </div>
 
     <!-- 英雄區 (Hero Section) -->
@@ -76,9 +100,14 @@
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
                 <a href="#about" class="gold-bg text-black font-bold px-8 py-3 rounded-sm hover:bg-yellow-600 transition-all">了解更多</a>
-                <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="border border-white text-white px-8 py-3 rounded-sm hover:bg-white hover:text-black transition-all">
-                    <i class="fab fa-youtube mr-2"></i>瀏覽 YouTube
-                </a>
+                <div class="flex gap-2">
+                    <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="border border-white text-white px-6 py-3 rounded-sm hover:bg-white hover:text-black transition-all">
+                        <i class="fab fa-youtube mr-2"></i>YouTube
+                    </a>
+                    <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="border border-white text-white px-6 py-3 rounded-sm hover:bg-white hover:text-black transition-all">
+                        <i class="fab fa-facebook-f mr-2"></i>Facebook
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -159,21 +188,33 @@
         </div>
     </section>
 
-    <!-- YouTube 連結區 -->
+    <!-- 社交媒體與片段 -->
     <section id="videos" class="py-20 bg-white px-6 md:px-20 border-b">
         <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-3xl font-bold serif mb-6">教學與示範片段</h3>
+            <h3 class="text-3xl font-bold serif mb-6">關注社交平台與示範片段</h3>
             <p class="text-gray-600 mb-10 leading-relaxed">
-                我會定期在個人頻道分享低音大提琴、大提琴的演奏技巧及練習指引。<br>歡迎訂閱以獲取最新的教學資源。
+                我會定期在個人平台分享低音大提琴、大提琴的演奏技巧、練習指引以及樂器製作心得。
             </p>
             
-            <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="group inline-flex flex-col items-center">
-                <div class="w-24 h-24 bg-red-600 text-white rounded-full flex items-center justify-center text-4xl shadow-xl group-hover:scale-110 transition-transform mb-4">
-                    <i class="fab fa-youtube"></i>
-                </div>
-                <span class="text-xl font-bold text-gray-800 group-hover:text-red-600 transition-colors">@lawrencetambass</span>
-                <span class="text-gray-500 mt-2 text-sm">點擊前往 YouTube 頻道瀏覽影片</span>
-            </a>
+            <div class="flex flex-col sm:flex-row justify-center gap-12 sm:gap-24">
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="group inline-flex flex-col items-center">
+                    <div class="w-24 h-24 bg-red-600 text-white rounded-full flex items-center justify-center text-4xl shadow-xl group-hover:scale-110 transition-transform mb-4">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800 group-hover:text-red-600 transition-colors">YouTube 頻道</span>
+                    <span class="text-gray-500 mt-2 text-sm">@lawrencetambass</span>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="group inline-flex flex-col items-center">
+                    <div class="w-24 h-24 bg-[#1877F2] text-white rounded-full flex items-center justify-center text-4xl shadow-xl group-hover:scale-110 transition-transform mb-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800 group-hover:text-[#1877F2] transition-colors">Facebook 專頁</span>
+                    <span class="text-gray-500 mt-2 text-sm">Lawrence Tam Double Bass</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -234,6 +275,7 @@
     <footer class="bg-black py-10 text-center text-gray-600 text-sm border-t border-gray-800">
         <p class="mb-6">© 2026 Lawrence Tam Lok Hang. All Rights Reserved.</p>
         <div class="flex justify-center space-x-10 text-2xl">
+            <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="hover:text-[#1877F2] transition-colors"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
             <a href="https://wa.me/85264473995" target="_blank" class="hover:text-green-500 transition-colors"><i class="fab fa-whatsapp"></i></a>
             <a href="mailto:lawrence.tam@chicagoviolinhk.com" class="hover:text-[#d4af37] transition-colors"><i class="fas fa-envelope"></i></a>
