@@ -65,8 +65,8 @@
             <a href="#about" class="nav-link">個人簡介</a>
             <a href="#qualifications" class="nav-link">專業資格</a>
             <a href="#videos" class="nav-link">示範影片</a>
-            <a href="#craft" class="nav-link">提琴製作</a>
-            <!-- 導航欄加入社交媒體圖標 -->
+            <a href="#location" class="nav-link">上課地點</a>
+            <!-- 導航欄社交媒體圖標 -->
             <div class="flex space-x-4 border-l border-gray-700 pl-6 ml-2">
                 <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="hover:text-[#1877F2] transition-colors"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
@@ -82,7 +82,7 @@
         <a href="#about" onclick="toggleMenu()">個人簡介</a>
         <a href="#qualifications" onclick="toggleMenu()">專業資格</a>
         <a href="#videos" onclick="toggleMenu()">示範影片</a>
-        <a href="#craft" onclick="toggleMenu()">提琴製作</a>
+        <a href="#location" onclick="toggleMenu()">上課地點</a>
         <div class="flex space-x-8 text-3xl pt-4">
             <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.youtube.com/@lawrencetambass" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -218,6 +218,57 @@
         </div>
     </section>
 
+    <!-- 上課地點區 -->
+    <section id="location" class="py-20 bg-gray-50 px-6 md:px-20 border-b">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold serif mb-4">上課地點</h3>
+                <p class="text-gray-600">工作室位於交通便利的佐敦區，環境專業安靜，適合專心研習音樂。</p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row max-w-5xl mx-auto border border-gray-100">
+                <div class="p-8 md:w-1/2 flex flex-col justify-center">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-12 h-12 gold-bg rounded-full flex items-center justify-center text-black flex-shrink-0">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">工作室地址</h4>
+                            <p class="text-gray-600 leading-relaxed">
+                                佐敦上海街26-28號<br>
+                                恒邦商業中心14樓5室
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 mb-8">
+                        <div class="w-12 h-12 gold-bg rounded-full flex items-center justify-center text-black flex-shrink-0">
+                            <i class="fas fa-subway"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">交通建議</h4>
+                            <div class="text-gray-600 space-y-2">
+                                <p class="flex items-center gap-2"><span class="w-2 h-2 gold-bg rounded-full"></span> 佐敦站 C2 出口 (步行約 5 分鐘)</p>
+                                <p class="flex items-center gap-2"><span class="w-2 h-2 gold-bg rounded-full"></span> 柯士甸站 F 出口 (步行約 3 分鐘)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/M45vuArd74tRZd7i6" target="_blank" class="inline-flex items-center justify-center bg-gray-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-black transition-all">
+                        <i class="fas fa-external-link-alt mr-2"></i> 在 Google Maps 中開啟
+                    </a>
+                </div>
+                <!-- Google Maps Embed -->
+                <div class="md:w-1/2 bg-gray-200 h-80 md:h-auto relative">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=%E6%81%92%E9%82%A6%E5%95%86%E6%A5%AD%E4%B8%AD%E5%BF%83&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 提琴製作專區 (Craftsmanship) -->
     <section id="craft" class="py-24 bg-black text-white px-6 md:px-20">
         <div class="max-w-4xl mx-auto text-center">
@@ -247,13 +298,13 @@
             
             <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
                 <!-- Email -->
-                <a href="mailto:lawrence.tam@chicagoviolinhk.com" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
+                <a href="mailto:lawrence.tam@chicagoviolinshk.com" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
                     <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center text-black text-3xl group-hover:bg-yellow-500">
                         <i class="fas fa-envelope"></i>
                     </div>
                     <div>
                         <p class="text-sm text-gray-500 uppercase font-bold tracking-widest mb-1">電子郵件</p>
-                        <p class="text-xl font-medium">lawrence.tam@chicagoviolinhk.com</p>
+                        <p class="text-xl font-medium">lawrence.tam@chicagoviolinshk.com</p>
                     </div>
                 </a>
 
@@ -278,7 +329,7 @@
             <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="hover:text-[#1877F2] transition-colors"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
             <a href="https://wa.me/85264473995" target="_blank" class="hover:text-green-500 transition-colors"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:lawrence.tam@chicagoviolinhk.com" class="hover:text-[#d4af37] transition-colors"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:lawrence.tam@chicagoviolinshk.com" class="hover:text-[#d4af37] transition-colors"><i class="fas fa-envelope"></i></a>
         </div>
     </footer>
 
