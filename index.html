@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lawrence Tam Lok Hang | 音樂演奏及提琴製作</title>
 
-    <!-- Facebook / Open Graph Meta Tags (用於社交媒體分享預覽) -->
+    <!-- Facebook / Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="您的網址連結">
     <meta property="og:title" content="Lawrence Tam Lok Hang | 音樂演奏及提琴製作">
     <meta property="og:description" content="結合卓越演奏技巧與深厚提琴製作造詣，為每一位學生開啟通往音樂藝術與職人工藝的大門。">
-    <!-- 使用您提供的 Hero Section 圖片作為分享縮圖 -->
     <meta property="og:image" content="https://lh3.googleusercontent.com/d/1sRDlEqJKQ7w3B4pu1WB6BikzOR0xCpAU">
 
     <!-- Twitter Meta Tags -->
@@ -53,6 +52,15 @@
             position: relative;
             background-color: #f3f4f6;
         }
+
+        /* 價目表圖片專用樣式 */
+        .price-image-container {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease;
+        }
+        .price-image-container:hover {
+            transform: scale(1.02);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -64,10 +72,10 @@
             <a href="#home" class="nav-link">首頁</a>
             <a href="#about" class="nav-link">個人簡介</a>
             <a href="#qualifications" class="nav-link">專業資格</a>
+            <a href="#pricing" class="nav-link">價目表</a>
             <a href="#craft" class="nav-link">提琴製作</a>
             <a href="#videos" class="nav-link">示範影片</a>
             <a href="#location" class="nav-link">上課地點</a>
-            <!-- 導航欄社交媒體圖標 -->
             <div class="flex space-x-4 border-l border-gray-700 pl-6 ml-2">
                 <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="hover:text-[#1877F2] transition-colors"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
@@ -82,6 +90,7 @@
         <a href="#home" onclick="toggleMenu()">首頁</a>
         <a href="#about" onclick="toggleMenu()">個人簡介</a>
         <a href="#qualifications" onclick="toggleMenu()">專業資格</a>
+        <a href="#pricing" onclick="toggleMenu()">價目表</a>
         <a href="#craft" onclick="toggleMenu()">提琴製作</a>
         <a href="#videos" onclick="toggleMenu()">示範影片</a>
         <a href="#location" onclick="toggleMenu()">上課地點</a>
@@ -151,7 +160,7 @@
     </section>
 
     <!-- 專業資格 -->
-    <section id="qualifications" class="py-20 bg-gray-50 px-6 md:px-20">
+    <section id="qualifications" class="py-20 bg-gray-50 px-6 md:px-20 border-b">
         <div class="max-w-6xl mx-auto text-center mb-16">
             <h3 class="text-3xl font-bold serif mb-4 underline decoration-[#d4af37] decoration-4 underline-offset-8">專業資格與資歷</h3>
         </div>
@@ -190,7 +199,35 @@
         </div>
     </section>
 
-    <!-- 提琴製作專區 (Craftsmanship) - 已移動位置 -->
+    <!-- 新增：價目表區塊 -->
+    <section id="pricing" class="py-20 bg-white px-6 md:px-20 border-b">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold serif mb-4">課程價目表</h3>
+                <p class="text-gray-600">透明合理的收費，提供最優質的音樂教育與專業諮詢。</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="price-image-container rounded-2xl overflow-hidden bg-gray-100 border-4 border-white">
+                    <!-- 使用轉換後的 Google Drive 圖片連結 -->
+                    <img src="https://lh3.googleusercontent.com/d/15z5yyWIxsoQzt02FFMEokxng9ecATcda" 
+                         alt="Lawrence Tam 課程價目表" 
+                         class="w-full h-auto block"
+                         onerror="this.parentElement.innerHTML='<div class=\'p-20 text-center text-gray-400\'>無法載入價目表圖片，請檢查連結。</div>'">
+                </div>
+                <p class="mt-8 text-center text-sm text-gray-500 italic">
+                    * 價格可能隨課程內容與學員程度有所調整，詳情請直接與譚老師聯繫。
+                </p>
+                <div class="mt-10 text-center">
+                    <a href="https://wa.me/85264473995" target="_blank" class="inline-block bg-green-600 text-white px-8 py-4 rounded-full font-bold hover:bg-green-700 transition-all shadow-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> 立即 WhatsApp 查詢報名
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提琴製作專區 (Craftsmanship) -->
     <section id="craft" class="py-24 bg-black text-white px-6 md:px-20">
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="text-3xl font-bold serif mb-6 gold-text italic">Luthiery & Artistry</h3>
