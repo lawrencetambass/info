@@ -81,7 +81,6 @@
             <a href="#videos" class="nav-link" data-i18n="nav_videos">示範影片</a>
             <a href="#location" class="nav-link" data-i18n="nav_location">上課地點</a>
             
-            <!-- 語言切換 (桌面) -->
             <div class="flex items-center space-x-2 border-l border-gray-700 pl-6 ml-2">
                 <span onclick="changeLanguage('zh')" id="lang-zh" class="lang-btn active">中文</span>
                 <span class="text-gray-600">/</span>
@@ -107,7 +106,6 @@
         <a href="#videos" onclick="toggleMenu()" data-i18n="nav_videos">示範影片</a>
         <a href="#location" onclick="toggleMenu()" data-i18n="nav_location">上課地點</a>
         
-        <!-- 語言切換 (手機) -->
         <div class="flex items-center space-x-4 pt-4 border-t border-gray-800 w-1/2 justify-center">
             <span onclick="changeLanguage('zh'); toggleMenu();" class="lang-btn active text-lg">中文</span>
             <span class="text-gray-600">|</span>
@@ -129,16 +127,8 @@
             <p class="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed" data-i18n="hero_desc">
                 結合卓越演奏技巧與深厚提琴製作造詣，<br>為每一位學生開啟通往音樂藝術與職人工藝的大門。
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#about" class="gold-bg text-black font-bold px-8 py-3 rounded-sm hover:bg-yellow-600 transition-all" data-i18n="btn_more">了解更多</a>
-                <div class="flex gap-2">
-                    <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="border border-white text-white px-6 py-3 rounded-sm hover:bg-white hover:text-black transition-all">
-                        <i class="fab fa-youtube mr-2"></i>YouTube
-                    </a>
-                    <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="border border-white text-white px-6 py-3 rounded-sm hover:bg-white hover:text-black transition-all">
-                        <i class="fab fa-facebook-f mr-2"></i>Facebook
-                    </a>
-                </div>
+            <div class="flex justify-center">
+                <a href="#about" class="gold-bg text-black font-bold px-12 py-4 rounded-sm hover:bg-yellow-600 transition-all shadow-lg" data-i18n="btn_more">了解更多</a>
             </div>
         </div>
     </section>
@@ -160,7 +150,7 @@
             <div>
                 <h3 class="text-3xl font-bold serif mb-6" data-i18n="about_title">關於譚老師 (Lawrence Tam)</h3>
                 <p class="text-gray-600 mb-6 leading-loose" data-i18n="about_p1">
-                    譚氏於 2013 年畢業於香港演藝學院，取得音樂學士學位，主修低音大提琴演奏。除了在舞台上的演奏，譚氏更曾遠赴美國芝加哥深造提琴製作工藝。",
+                    譚氏於 2013 年畢業於香港演藝學院，取得音樂學士學位，主修低音大提琴演奏。除了在舞台上的演奏，譚氏更曾遠赴美國芝加哥深造提琴製作工藝。
                 </p>
                 <p class="text-gray-600 mb-8 leading-loose" data-i18n="about_p2">
                     憑藉對樂器結構的精確理解與卓越的教學法，譚氏特別擅長啟蒙幼年學生，透過鼓勵與系統化的引導，讓學生在掌握技術的同時，也能真正熱愛音樂。
@@ -188,23 +178,17 @@
             <div class="bg-white p-8 shadow-sm card border-t-4 border-[#d4af37]">
                 <i class="fas fa-graduation-cap text-3xl gold-text mb-6"></i>
                 <h4 class="text-xl font-bold mb-4" data-i18n="card_1_title">學術及文憑</h4>
-                <ul class="text-gray-600 space-y-3 text-sm" id="list-qual-academic">
-                    <!-- JS 將填充內容 -->
-                </ul>
+                <ul class="text-gray-600 space-y-3 text-sm" id="list-qual-academic"></ul>
             </div>
             <div class="bg-white p-8 shadow-md card border-t-4 border-[#d4af37]">
                 <i class="fas fa-chalkboard-teacher text-3xl gold-text mb-6"></i>
                 <h4 class="text-xl font-bold mb-4" data-i18n="card_2_title">教學經驗</h4>
-                <ul class="text-gray-600 space-y-3 text-sm" id="list-qual-teaching">
-                    <!-- JS 將填充內容 -->
-                </ul>
+                <ul class="text-gray-600 space-y-3 text-sm" id="list-qual-teaching"></ul>
             </div>
             <div class="bg-white p-8 shadow-md card border-t-4 border-[#d4af37]">
                 <i class="fas fa-tools text-3xl gold-text mb-6"></i>
                 <h4 class="text-xl font-bold mb-4" data-i18n="card_3_title">專業工藝</h4>
-                <ul class="text-gray-600 space-y-3 text-sm" id="list-qual-craft">
-                    <!-- JS 將填充內容 -->
-                </ul>
+                <ul class="text-gray-600 space-y-3 text-sm" id="list-qual-craft"></ul>
             </div>
         </div>
     </section>
@@ -218,7 +202,7 @@
             </div>
             <div class="max-w-3xl mx-auto">
                 <div class="price-image-container rounded-2xl overflow-hidden bg-gray-100 border-4 border-white">
-                    <img src="https://lh3.googleusercontent.com/d/15z5yyWIxsoQzt02FFMEokxng9ecATcda" alt="Price List" class="w-full h-auto block">
+                    <img src="https://lh3.googleusercontent.com/d/1jM-WzR_zMJBYnbKkrjca5Un1PPCtxjMB" alt="Price List" class="w-full h-auto block">
                 </div>
                 <p class="mt-8 text-center text-sm text-gray-500 italic" data-i18n="price_note">
                     * 價格可能隨課程內容與學員程度有所調整，詳情請直接與譚老師聯繫。
@@ -234,20 +218,29 @@
 
     <!-- 提琴製作專區 -->
     <section id="craft" class="py-24 bg-black text-white px-6 md:px-20">
-        <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-3xl font-bold serif mb-6 gold-text italic">Luthiery & Artistry</h3>
-            <h4 class="text-xl mb-8" data-i18n="craft_subtitle">不只是演奏家，更是樂器醫師與職人。</h4>
-            <p class="text-gray-400 mb-10 leading-loose text-lg" data-i18n="craft_p">
-                在芝加哥期間，隨著名造琴大賽評判 Antoine Nédélec 及資深導師 Kristin Siegfried-Ballenger 深造，專研小、中、大提琴製作。這種背景讓譚老師能從物理構造層面解決學生的音色問題。
-            </p>
-            <div class="flex flex-col md:flex-row justify-center gap-8 text-left max-w-2xl mx-auto">
-                <div class="flex items-start gap-4 p-4 border border-gray-800 rounded-lg flex-1">
-                    <i class="fas fa-check gold-text mt-1"></i>
-                    <p data-i18n="craft_point1">精通提琴音色調整 (Sound Adjustment)</p>
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold serif mb-6 gold-text italic">Luthiery & Artistry</h3>
+                <h4 class="text-xl mb-8" data-i18n="craft_subtitle">不只是演奏家，更是樂器醫師與職人。</h4>
+                <p class="text-gray-400 mb-10 leading-loose text-lg max-w-4xl mx-auto" data-i18n="craft_p">
+                    在芝加哥期間，隨著名造琴大賽評判 Antoine Nédélec 及資深導師 Kristin Siegfried-Ballenger 深造，專研小、中、大提琴製作。這種背景讓譚老師能從物理構造層面解決學生的音色問題。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <div class="flex items-start gap-4 p-8 border border-gray-800 rounded-lg bg-gray-900/50">
+                    <i class="fas fa-microscope gold-text text-3xl mt-1"></i>
+                    <div>
+                        <h5 class="font-bold text-xl mb-3" data-i18n="craft_point1_title">精通提琴音色調整</h5>
+                        <p class="text-gray-400 leading-relaxed" data-i18n="craft_point1_desc">透過調整音柱位置與弦碼弧度，釋放樂器潛在的最佳音色。</p>
+                    </div>
                 </div>
-                <div class="flex items-start gap-4 p-4 border border-gray-800 rounded-lg flex-1">
-                    <i class="fas fa-check gold-text mt-1"></i>
-                    <p data-i18n="craft_point2">專業弦樂器維修與保養顧問</p>
+                <div class="flex items-start gap-4 p-8 border border-gray-800 rounded-lg bg-gray-900/50">
+                    <i class="fas fa-shield-alt gold-text text-3xl mt-1"></i>
+                    <div>
+                        <h5 class="font-bold text-xl mb-3" data-i18n="craft_point2_title">專業修復顧問</h5>
+                        <p class="text-gray-400 leading-relaxed" data-i18n="craft_point2_desc">提供破損修復、指板修平及換弦等精密手工服務。</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -257,9 +250,7 @@
     <section id="videos" class="py-20 bg-white px-6 md:px-20 border-b">
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="text-3xl font-bold serif mb-6" data-i18n="video_title">關注社交平台與示範片段</h3>
-            <p class="text-gray-600 mb-10 leading-relaxed" data-i18n="video_desc">
-                我會定期在個人平台分享低音大提琴、大提琴的演奏技巧、練習指引以及樂器製作心得。
-            </p>
+            <p class="text-gray-600 mb-10 leading-relaxed" data-i18n="video_desc">我會定期在個人平台分享技巧、練習指引以及樂器製作心得。</p>
             <div class="flex flex-col sm:flex-row justify-center gap-12 sm:gap-24">
                 <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="group inline-flex flex-col items-center">
                     <div class="w-24 h-24 bg-red-600 text-white rounded-full flex items-center justify-center text-4xl shadow-xl group-hover:scale-110 transition-transform mb-4">
@@ -322,7 +313,7 @@
         </div>
     </section>
 
-    <!-- 聯絡區域 -->
+    <!-- 聯絡與腳部 -->
     <section id="contact" class="py-24 bg-gray-900 text-white px-6 md:px-20">
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="text-4xl font-bold serif mb-8 gold-text" data-i18n="contact_title">聯絡及諮詢</h3>
@@ -346,7 +337,6 @@
         </div>
     </section>
 
-    <!-- 腳部 -->
     <footer class="bg-black py-10 text-center text-gray-600 text-sm border-t border-gray-800">
         <p class="mb-6">© 2026 Lawrence Tam Lok Hang. All Rights Reserved.</p>
         <div class="flex justify-center space-x-10 text-2xl">
@@ -357,134 +347,83 @@
     </footer>
 
     <script>
-        // 語言資料庫
+        // --- 語言資料庫 ---
         const i18n = {
             zh: {
                 nav_home: "首頁", nav_about: "個人簡介", nav_qualifications: "專業資格", nav_pricing: "價目表", nav_craft: "提琴製作", nav_videos: "示範影片", nav_location: "上課地點", nav_contact: "立即聯絡",
-                hero_sub: "Cellist | Double Bassist | Luthier",
-                hero_title: "Lawrence Tam Lok Hang",
+                hero_sub: "Cellist | Double Bassist | Luthier", hero_title: "Lawrence Tam Lok Hang",
                 hero_desc: "結合卓越演奏技巧與深厚提琴製作造詣，<br>為每一位學生開啟通往音樂藝術與職人工藝的大門。",
-                btn_more: "了解更多",
-                exp_years: "教學年資",
-                about_title: "關於譚老師 (Lawrence Tam)",
+                btn_more: "了解更多", exp_years: "教學年資", about_title: "關於譚老師 (Lawrence Tam)",
                 about_p1: "譚氏於 2013 年畢業於香港演藝學院，取得音樂學士學位，主修低音大提琴演奏。除了在舞台上的演奏，譚氏更曾遠赴美國芝加哥深造提琴製作工藝。",
                 about_p2: "憑藉對樂器結構的精確理解與卓越的教學法，譚氏特別擅長啟蒙幼年學生，透過鼓勵與系統化的引導，讓學生在掌握技術的同時，也能真正熱愛音樂。",
-                qual_hkapa: "音樂學士學位", qual_csvm: "提琴製作專業畢業",
-                section_qual: "專業資格與資歷",
-                card_1_title: "學術及文憑",
-                card_1_list: ["香港演藝學院 音樂學士 (低音大提琴)", "師承名家宗小謙老師主修低音大提琴", "聖三一學院 ATCL 大提琴文憑", "聖三一學院 ATCL 低音大提琴文憑", "英國皇家音樂學院 鋼琴六級"],
-                card_2_title: "教學經驗",
-                card_2_list: ["康文署音樂事務處導師 (2010-2019)", "多間中小學低音大提琴/大提琴導師", "多間學校樂團指揮", "指導 5 歲學生通過 5 級考級"],
-                card_3_title: "專業工藝",
-                card_3_list: ["Chicago School of Violin Making 畢業", "師承名家 Antoine Nédélec", "破格提前完成三年制工藝課程", "提琴維修、調整與製作專家"],
-                price_title: "課程價目表",
-                price_desc: "透明合理的收費，提供最優質的音樂教育與專業諮詢。",
+                qual_hkapa: "音樂學士學位", qual_csvm: "提琴製作專業畢業", section_qual: "專業資格與資歷",
+                card_1_title: "學術及文憑", card_1_list: ["香港演藝學院 音樂學士 (低音大提琴)", "師承名家宗小謙老師主修低音大提琴", "聖三一學院 ATCL 大提琴文憑", "聖三一學院 ATCL 低音大提琴文憑", "英國皇家音樂學院 鋼琴六級"],
+                card_2_title: "教學經驗", card_2_list: ["康文署音樂事務處導師 (2010-2019)", "多間中小學低音大提琴/大提琴導師", "多間學校樂團指揮", "指導 5 歲學生通過 5 級考級"],
+                card_3_title: "專業工藝", card_3_list: ["Chicago School of Violin Making 畢業", "師承名家 Antoine Nédélec", "破格提前完成三年制工藝課程", "提琴維修、調整與製作專家"],
+                price_title: "課程價目表", price_desc: "透明合理的收費，提供最優質的音樂教育與專業諮詢。",
                 price_note: "* 價格可能隨課程內容與學員程度有所調整，詳情請直接與譚老師聯繫。",
                 btn_whatsapp: "立即 WhatsApp 查詢報名",
                 craft_subtitle: "不只是演奏家，更是樂器醫師與職人。",
-                craft_p: "在芝加哥期間，隨著名造琴大賽評判 Antoine Nédélec 及資深導師 Kristin Siegfried-Ballenger 深造，專研小、中、大提琴製作。這種背景讓譚老師能從物理構造層面解決學生的音色問題。",
-                craft_point1: "精通提琴音色調整 (Sound Adjustment)",
-                craft_point2: "專業弦樂器維修與保養顧問",
-                video_title: "關注社交平台與示範片段",
-                video_desc: "我會定期在個人平台分享低音大提琴、大提琴的演奏技巧、練習指引以及樂器製作心得。",
+                craft_p: "在芝加哥期間，深造小、中、大提琴製作。這種背景讓譚老師能從物理構造層面解決音色問題。",
+                craft_point1_title: "精通提琴音色調整", craft_point1_desc: "透過調整音柱位置與弦碼弧度，釋放樂器最佳音色。",
+                craft_point2_title: "專業修復顧問", craft_point2_desc: "提供破損修復、指板修平及換弦等精密服務。",
+                video_title: "關注社交平台與示範片段", video_desc: "定期在平台分享演奏技巧、練習指引以及樂器製作心得。",
                 yt_channel: "YouTube 頻道", fb_page: "Facebook 專頁",
-                loc_title: "上課地點",
-                loc_desc: "工作室位於交通便利的佐敦區，環境專業安靜，適合專心研習音樂。",
-                loc_addr_label: "工作室地址",
-                loc_addr: "佐敦上海街26-28號<br>恒邦商業中心14樓5室",
-                loc_transport_label: "交通建議",
-                loc_jordan: "佐敦站 C2 出口 (步行約 5 分鐘)",
-                loc_austin: "柯士甸站 F 出口 (步行約 3 分鐘)",
-                btn_map: "在 Google Maps 中開啟",
-                contact_title: "聯絡及諮詢",
-                contact_desc: "無論是預約樂器課程、提琴維修諮詢或演出邀約，歡迎隨時聯絡。",
+                loc_title: "上課地點", loc_desc: "工作室位於佐敦區，環境專業安靜。",
+                loc_addr_label: "工作室地址", loc_addr: "佐敦上海街26-28號<br>恒邦商業中心14樓5室",
+                loc_transport_label: "交通建議", loc_jordan: "佐敦站 C2 出口 (步行約 5 分鐘)", loc_austin: "柯士甸站 F 出口 (步行約 3 分鐘)",
+                btn_map: "在 Google Maps 中開啟", contact_title: "聯絡及諮詢", contact_desc: "歡迎預約課程、諮詢維修或演出邀約。",
                 email_label: "電子郵件", wa_label: "WhatsApp 諮詢"
             },
             en: {
                 nav_home: "Home", nav_about: "About", nav_qualifications: "Qualifications", nav_pricing: "Pricing", nav_craft: "Luthiery", nav_videos: "Videos", nav_location: "Location", nav_contact: "Contact",
-                hero_sub: "Cellist | Double Bassist | Luthier",
-                hero_title: "Lawrence Tam Lok Hang",
+                hero_sub: "Cellist | Double Bassist | Luthier", hero_title: "Lawrence Tam Lok Hang",
                 hero_desc: "Combining masterful performance with exquisite craftsmanship,<br>opening doors to music and artistry for every student.",
-                btn_more: "Learn More",
-                exp_years: "Teaching Experience",
-                about_title: "About Lawrence Tam",
-                about_p1: "Lawrence graduated from the Hong Kong Academy for Performing Arts in 2013 with a Bachelor of Music, majoring in Double Bass. Beyond performing, he ventured to Chicago, USA, to study the art of violin making.",
-                about_p2: "With a precise understanding of instrument structure and exceptional teaching methods, Lawrence excels at inspiring young students through encouragement and systematic guidance.",
-                qual_hkapa: "Bachelor of Music", qual_csvm: "Violin Making Graduate",
-                section_qual: "Professional Qualifications",
-                card_1_title: "Academic & Diplomas",
-                card_1_list: ["BMus, HKAPA (Double Bass)", "Studied under renowned master Eddie Zong", "ATCL Cello Diploma, Trinity College", "ATCL Double Bass Diploma, Trinity College", "ABRSM Piano Grade 6"],
-                card_2_title: "Teaching Experience",
-                card_2_list: ["LCSD Music Office Instructor (2010-2019)", "Tutor for Double Bass/Cello in various schools", "Conductor for various school orchestras", "Guided 5-year-old student to pass Grade 5 exam"],
-                card_3_title: "Craftsmanship",
-                card_3_list: ["Chicago School of Violin Making Graduate", "Studied under Master Antoine Nédélec", "Completed 3-year program ahead of schedule", "Expert in repair, adjustment & violin making"],
-                price_title: "Course Pricing",
-                price_desc: "Transparent and reasonable fees for the highest quality music education.",
-                price_note: "* Prices may vary based on course content and level. Please contact Lawrence for details.",
+                btn_more: "Learn More", exp_years: "Experience", about_title: "About Lawrence Tam",
+                about_p1: "Lawrence graduated from HKAPA in 2013. Beyond performing, he studied violin making in Chicago, USA.",
+                about_p2: "With precise structural knowledge, Lawrence excels at inspiring students through systematic guidance.",
+                qual_hkapa: "Bachelor of Music", qual_csvm: "Violin Making Graduate", section_qual: "Qualifications",
+                card_1_title: "Academic & Diplomas", card_1_list: ["BMus, HKAPA", "Studied under Eddie Zong", "ATCL Cello Diploma", "ATCL Double Bass Diploma", "ABRSM Piano Gr. 6"],
+                card_2_title: "Teaching Experience", card_2_list: ["LCSD Instructor (2010-2019)", "Tutor in various schools", "Orchestra Conductor", "Guided 5-yo students"],
+                card_3_title: "Craftsmanship", card_3_list: ["CSVM Graduate", "Studied under Antoine Nédélec", "Fast-tracked completion", "Expert in repair & making"],
+                price_title: "Course Pricing", price_desc: "Transparent fees for quality education.",
+                price_note: "* Prices may vary. Contact Lawrence for details.",
                 btn_whatsapp: "Enquire via WhatsApp",
-                craft_subtitle: "More than a performer, an instrument doctor and artisan.",
-                craft_p: "During his time in Chicago, he studied violin making under Antoine Nédélec and Kristin Siegfried-Ballenger. This background allows him to solve sound issues from a structural perspective.",
-                craft_point1: "Expert in Sound Adjustment",
-                craft_point2: "Consultant for String Instrument Repair",
-                video_title: "Social Media & Performance",
-                video_desc: "I regularly share performance tips, practice guides, and violin making insights on my platforms.",
+                craft_subtitle: "More than a performer, an instrument doctor.",
+                craft_p: "Studied in Chicago to solve sound issues from a structural perspective.",
+                craft_point1_title: "Sound Adjustment", craft_point1_desc: "Optimize tone through post and bridge adjustments.",
+                craft_point2_title: "Repair Consultant", craft_point2_desc: "Expertise in restoration and maintenance.",
+                video_title: "Social Media", video_desc: "Sharing performance techniques and luthier tips.",
                 yt_channel: "YouTube Channel", fb_page: "Facebook Page",
-                loc_title: "Location",
-                loc_desc: "The studio is located in Jordan, providing a professional and quiet environment for music studies.",
-                loc_addr_label: "Studio Address",
-                loc_addr: "Unit 5, 14/F, Hang Bong Commercial Centre,<br>26-28 Shanghai Street, Jordan",
-                loc_transport_label: "Transportation",
-                loc_jordan: "Jordan Station Exit C2 (5 min walk)",
-                loc_austin: "Austin Station Exit F (3 min walk)",
-                btn_map: "Open in Google Maps",
-                contact_title: "Contact & Enquiry",
-                contact_desc: "Welcome to contact for course bookings, repair consultations, or performance enquiries.",
+                loc_title: "Location", loc_desc: "Studio in Jordan, professional and quiet.",
+                loc_addr_label: "Studio Address", loc_addr: "Hang Bong Commercial Centre, Jordan",
+                loc_transport_label: "Transportation", loc_jordan: "Jordan Stn C2 (5 min walk)", loc_austin: "Austin Stn F (3 min walk)",
+                btn_map: "Open in Maps", contact_title: "Contact", contact_desc: "Contact for bookings, repairs or enquiries.",
                 email_label: "Email", wa_label: "WhatsApp"
             }
         };
 
         let currentLang = 'zh';
-
         function changeLanguage(lang) {
             currentLang = lang;
             document.documentElement.lang = lang === 'zh' ? 'zh-HK' : 'en';
-
-            // 更新按鈕狀態
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-            if(lang === 'zh') document.getElementById('lang-zh')?.classList.add('active');
-            else document.getElementById('lang-en')?.classList.add('active');
-
-            // 更新文字內容
+            document.getElementById('lang-' + lang)?.classList.add('active');
             document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (i18n[lang][key]) {
-                    el.innerHTML = i18n[lang][key];
-                }
+                const k = el.getAttribute('data-i18n');
+                if (i18n[lang][k]) el.innerHTML = i18n[lang][k];
             });
-
-            // 更新列表類內容
             updateList('list-qual-academic', i18n[lang].card_1_list);
             updateList('list-qual-teaching', i18n[lang].card_2_list);
             updateList('list-qual-craft', i18n[lang].card_3_list);
         }
-
         function updateList(id, items) {
-            const list = document.getElementById(id);
-            if (list) {
-                list.innerHTML = items.map(item => `<li>• ${item}</li>`).join('');
-            }
+            const l = document.getElementById(id);
+            if (l) l.innerHTML = items.map(i => `<li>• ${i}</li>`).join('');
         }
+        function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); document.getElementById('mobile-menu').classList.toggle('flex'); }
 
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-            menu.classList.toggle('flex');
-        }
-
-        // 初始化
-        window.onload = () => {
-            changeLanguage('zh');
-        };
+        window.onload = () => changeLanguage('zh');
     </script>
 </body>
 </html>
