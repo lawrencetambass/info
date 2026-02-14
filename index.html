@@ -119,7 +119,7 @@
                 <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="hover:text-[#1877F2] transition-colors"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
             </div>
-            <a href="https://wa.me/85264473995" target="_blank" class="nav-link px-4 py-2 border border-[#d4af37] rounded-full gold-text hover:bg-[#d4af37] hover:text-black transition-all ml-4" data-i18n="nav_contact">立即聯絡</a>
+            <a href="https://forms.gle/xk7CkR2RhxB2kfZd7" target="_blank" class="nav-link px-4 py-2 border border-[#d4af37] rounded-full gold-text hover:bg-[#d4af37] hover:text-black transition-all ml-4 font-bold" data-i18n="nav_apply">立即報名</a>
         </div>
         <button class="md:hidden text-2xl" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
     </nav>
@@ -144,7 +144,7 @@
             <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.youtube.com/@lawrencetambass" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
-        <a href="https://wa.me/85264473995" target="_blank" onclick="toggleMenu()" class="px-8 py-2 border border-[#d4af37] gold-text" data-i18n="nav_contact">聯絡我</a>
+        <a href="https://forms.gle/xk7CkR2RhxB2kfZd7" target="_blank" onclick="toggleMenu()" class="px-8 py-2 border border-[#d4af37] gold-text font-bold" data-i18n="nav_apply">立即報名</a>
     </div>
 
     <!-- 英雄區 (Hero Section) -->
@@ -155,8 +155,9 @@
             <p class="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed" data-i18n="hero_desc">
                 結合卓越演奏技巧與深厚提琴製作造詣，<br>為每一位學生開啟通往音樂藝術與職人工藝的大門。
             </p>
-            <div class="flex justify-center">
-                <a href="#about" class="gold-bg text-black font-bold px-12 py-4 rounded-sm hover:bg-yellow-600 transition-all shadow-lg" data-i18n="btn_more">了解更多</a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#about" class="bg-white/10 text-white border border-white/30 font-bold px-12 py-4 rounded-sm hover:bg-white hover:text-black transition-all" data-i18n="btn_more">了解更多</a>
+                <a href="https://forms.gle/xk7CkR2RhxB2kfZd7" target="_blank" class="gold-bg text-black font-bold px-12 py-4 rounded-sm hover:bg-yellow-600 transition-all shadow-lg" data-i18n="btn_apply_now">線上報名</a>
             </div>
         </div>
     </section>
@@ -237,9 +238,12 @@
                 <p class="mt-8 text-center text-sm text-gray-500 italic" data-i18n="price_note">
                     * 價格可能隨課程內容與學員程度有所調整，詳情請直接與譚老師聯繫。
                 </p>
-                <div class="mt-10 text-center">
-                    <a href="https://wa.me/85264473995" target="_blank" class="inline-block bg-green-600 text-white px-8 py-4 rounded-full font-bold hover:bg-green-700 transition-all shadow-lg">
-                        <i class="fab fa-whatsapp mr-2"></i> <span data-i18n="btn_whatsapp">立即 WhatsApp 查詢報名</span>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="https://forms.gle/xk7CkR2RhxB2kfZd7" target="_blank" class="w-full sm:w-auto inline-block bg-black text-[#d4af37] border-2 border-[#d4af37] px-8 py-4 rounded-full font-bold hover:bg-[#d4af37] hover:text-black transition-all shadow-lg text-center">
+                        <i class="fas fa-edit mr-2"></i> <span data-i18n="btn_form">填寫線上報名表</span>
+                    </a>
+                    <a href="https://wa.me/85264473995" target="_blank" class="w-full sm:w-auto inline-block bg-green-600 text-white px-8 py-4 rounded-full font-bold hover:bg-green-700 transition-all shadow-lg text-center">
+                        <i class="fab fa-whatsapp mr-2"></i> <span data-i18n="btn_whatsapp">立即 WhatsApp 查詢</span>
                     </a>
                 </div>
             </div>
@@ -347,8 +351,8 @@
     <section id="contact" class="py-24 bg-gray-900 text-white px-6 md:px-20">
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="text-4xl font-bold serif mb-8 gold-text" data-i18n="contact_title">聯絡及諮詢</h3>
-            <p class="text-gray-400 mb-12 text-lg" data-i18n="contact_desc">點擊下方按鈕複製地址或直接透過 WhatsApp 聯繫。</p>
-            <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-16">
+            <p class="text-gray-400 mb-12 text-lg" data-i18n="contact_desc">歡迎透過以下方式聯繫，或直接填寫報名表格。</p>
+            <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-12 mb-16">
                 <!-- 郵件區：改為點擊複製 -->
                 <div onclick="copyEmail()" class="cursor-pointer group flex flex-col items-center gap-4 hover:scale-105 transition-all">
                     <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center text-black text-3xl group-hover:bg-yellow-500 shadow-xl">
@@ -359,6 +363,7 @@
                         <p class="text-xl font-medium">lawrence.tam@chicagoviolinshk.com</p>
                     </div>
                 </div>
+                <!-- WhatsApp 區 -->
                 <a href="https://wa.me/85264473995" target="_blank" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
                     <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center text-black text-3xl group-hover:bg-yellow-500 shadow-xl">
                         <i class="fab fa-whatsapp"></i>
@@ -366,6 +371,16 @@
                     <div>
                         <p class="text-sm text-gray-500 uppercase font-bold tracking-widest mb-1" data-i18n="wa_label">WhatsApp 諮詢</p>
                         <p class="text-xl font-medium">+852 6447 3995</p>
+                    </div>
+                </a>
+                <!-- 表格區 -->
+                <a href="https://forms.gle/xk7CkR2RhxB2kfZd7" target="_blank" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
+                    <div class="w-20 h-20 bg-white text-black rounded-full flex items-center justify-center text-3xl group-hover:bg-gray-200 shadow-xl">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase font-bold tracking-widest mb-1" data-i18n="form_label">線上報名表</p>
+                        <p class="text-xl font-medium" data-i18n="form_link_text">立即填寫</p>
                     </div>
                 </a>
             </div>
@@ -392,7 +407,6 @@
             document.execCommand('copy');
             document.body.removeChild(el);
             
-            // 顯示提示
             const toast = document.getElementById("copy-toast");
             toast.innerHTML = currentLang === 'zh' ? "已複製郵件地址！" : "Email address copied!";
             toast.className = "show";
@@ -402,10 +416,10 @@
         // --- 語言資料庫 ---
         const i18n = {
             zh: {
-                nav_home: "首頁", nav_about: "個人簡介", nav_qualifications: "專業資格", nav_pricing: "價目表", nav_craft: "提琴製作", nav_videos: "示範影片", nav_location: "上課地點", nav_contact: "立即聯絡",
+                nav_home: "首頁", nav_about: "個人簡介", nav_qualifications: "專業資格", nav_pricing: "價目表", nav_craft: "提琴製作", nav_videos: "示範影片", nav_location: "上課地點", nav_apply: "立即報名",
                 hero_sub: "Cellist | Double Bassist | Luthier", hero_title: "Lawrence Tam Lok Hang",
                 hero_desc: "結合卓越演奏技巧與深厚提琴製作造詣，<br>為每一位學生開啟通往音樂藝術與職人工藝的大門。",
-                btn_more: "了解更多", exp_years: "教學年資", about_title: "關於譚老師 (Lawrence Tam)",
+                btn_more: "了解更多", btn_apply_now: "線上報名", exp_years: "教學年資", about_title: "關於譚老師 (Lawrence Tam)",
                 about_p1: "譚氏身兼低音大提琴演奏家、大提琴教育家與專業提琴製作導師。於 2013 年畢業於香港演藝學院取得音樂學士學位，並於同年獲選加入<b>荷蘭國家青年交響樂團 (NJO)</b> 參與夏季巡演。2019 年，他遠赴美國「芝加哥提琴製作學院 (CSVM)」深造，將藝術演奏與科學工藝完美融合。",
                 about_p2: "憑藉對樂器物理結構的透徹理解，譚氏在教學中融入了「工藝思維」，讓學生能透過對音色的精確掌握，突破技術瓶頸。他特別擅長啟盟教學，致力於在嚴謹的基礎訓練與對音樂的熱愛之間取得平衡，引領學生成為具備全面修養的音樂人。",
                 about_h_performance: "舞台演奏", about_desc_performance: "演藝學院學士 / NJO 成員",
@@ -416,7 +430,7 @@
                 card_3_title: "專業工藝", card_3_list: ["Chicago School of Violin Making 畢業", "師承名家 Antoine Nédélec", "破格提前完成三年制工藝課程", "提琴維修、調整與製作專家"],
                 price_title: "課程價目表", price_desc: "透明合理的收費，提供最優質的音樂教育與專業諮詢。",
                 price_note: "* 價格可能隨課程內容與學員程度有所調整，詳情請直接與譚老師聯繫。",
-                btn_whatsapp: "立即 WhatsApp 查詢報名",
+                btn_whatsapp: "立即 WhatsApp 查詢", btn_form: "填寫線上報名表",
                 craft_subtitle: "不只是演奏家，更是樂器醫師與職人。",
                 craft_p: "在芝加哥期間，深造小、中、大提琴製作。這種背景讓譚老師能從物理構造層面解決音色問題。",
                 craft_point1_title: "精通提琴音色調整", craft_point1_desc: "透過調整音柱位置與弦碼弧度，釋放樂器最佳音色。",
@@ -427,14 +441,14 @@
                 loc_addr_label: "工作室地址", loc_addr: "佐敦上海街26-28號<br>恒邦商業中心14樓5室",
                 loc_transport_label: "交通建議", loc_jordan: "佐敦站 C2 出口 (步行約 5 分鐘)", loc_austin: "柯士甸站 F 出口 (步行約 3 分鐘)",
                 btn_map: "在 Google Maps 中開啟", contact_title: "聯絡及諮詢", 
-                contact_desc: "點擊下方按鈕複製地址或直接透過 WhatsApp 聯繫。",
-                email_label: "電子郵件 (點擊複製)", wa_label: "WhatsApp 諮詢"
+                contact_desc: "歡迎透過以下方式聯繫，或直接填寫報名表格。",
+                email_label: "電子郵件 (點擊複製)", wa_label: "WhatsApp 諮詢", form_label: "線上報名表", form_link_text: "立即填寫"
             },
             en: {
-                nav_home: "Home", nav_about: "About", nav_qualifications: "Qualifications", nav_pricing: "Pricing", nav_craft: "Luthiery", nav_videos: "Videos", nav_location: "Location", nav_contact: "Contact",
+                nav_home: "Home", nav_about: "About", nav_qualifications: "Qualifications", nav_pricing: "Pricing", nav_craft: "Luthiery", nav_videos: "Videos", nav_location: "Location", nav_apply: "Enroll Now",
                 hero_sub: "Cellist | Double Bassist | Luthier", hero_title: "Lawrence Tam Lok Hang",
                 hero_desc: "Combining masterful performance with exquisite craftsmanship,<br>opening doors to music and artistry for every student.",
-                btn_more: "Learn More", exp_years: "Experience", about_title: "About Lawrence Tam",
+                btn_more: "Learn More", btn_apply_now: "Apply Online", exp_years: "Experience", about_title: "About Lawrence Tam",
                 about_p1: "Lawrence is a double bassist, cellist, and professional luthier. Graduating from HKAPA in 2013, he was selected in the same year to perform with the <b>National Youth Orchestra of the Netherlands (NJO)</b>. In 2019, he specialized in violin making at the CSVM in Chicago, bridging the gap between artistic performance and technical precision.",
                 about_p2: "Leveraging his deep understanding of instrument physics, Lawrence integrates a 'craftsmanship mindset' into his teaching, helping students overcome technical plateaus through tonal mastery. He excels in nurturing beginners, balancing rigorous training with a genuine passion for music.",
                 about_h_performance: "Performance", about_desc_performance: "BMus HKAPA / NJO Member",
@@ -445,7 +459,7 @@
                 card_3_title: "Craftsmanship", card_3_list: ["CSVM Graduate", "Studied under Antoine Nédélec", "Fast-tracked completion", "Expert in repair & making"],
                 price_title: "Course Pricing", price_desc: "Transparent fees for quality education.",
                 price_note: "* Prices may vary. Contact Lawrence for details.",
-                btn_whatsapp: "Enquire via WhatsApp",
+                btn_whatsapp: "WhatsApp Enquiry", btn_form: "Online Enrollment Form",
                 craft_subtitle: "More than a performer, an instrument doctor.",
                 craft_p: "Studied in Chicago to solve sound issues from a structural perspective.",
                 craft_point1_title: "Sound Adjustment", craft_point1_desc: "Optimize tone through post and bridge adjustments.",
@@ -456,8 +470,8 @@
                 loc_addr_label: "Studio Address", loc_addr: "Hang Bong Commercial Centre, Jordan",
                 loc_transport_label: "Transportation", loc_jordan: "Jordan Stn C2 (5 min walk)", loc_austin: "Austin Stn F (3 min walk)",
                 btn_map: "Open in Maps", contact_title: "Contact", 
-                contact_desc: "Click to copy email address or reach out via WhatsApp.",
-                email_label: "Email (Click to Copy)", wa_label: "WhatsApp"
+                contact_desc: "Contact via following methods or fill out the form.",
+                email_label: "Email (Click to Copy)", wa_label: "WhatsApp", form_label: "Enrollment Form", form_link_text: "Fill in now"
             }
         };
 
