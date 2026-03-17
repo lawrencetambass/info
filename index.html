@@ -90,6 +90,17 @@
 
         @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
         @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+
+        /* 自定義 Carousell 圖示顏色 */
+        .fa-carousell {
+            position: relative;
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-color: currentColor;
+            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2003/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.5c4.142 0 7.5 3.358 7.5 7.5s-3.358 7.5-7.5 7.5-7.5-3.358-7.5-7.5 3.358-7.5 7.5-7.5z'/%3E%3C/svg%3E") no-repeat center;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2003/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.5c4.142 0 7.5 3.358 7.5 7.5s-3.358 7.5-7.5 7.5-7.5-3.358-7.5-7.5 3.358-7.5 7.5-7.5z'/%3E%3C/svg%3E") no-repeat center;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -118,6 +129,7 @@
             <div class="flex space-x-4 border-l border-gray-700 pl-6 ml-2">
                 <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="hover:text-[#1877F2] transition-colors"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
+                <a href="https://carousell.app.link/aXB4DWi7z1b" target="_blank" class="hover:text-red-500 transition-colors" title="Carousell Store"><i class="fas fa-shopping-bag"></i></a>
             </div>
             <a href="https://forms.gle/xk7CkR2RhxB2kfZd7" target="_blank" class="nav-link px-4 py-2 border border-[#d4af37] rounded-full gold-text hover:bg-[#d4af37] hover:text-black transition-all ml-4 font-bold" data-i18n="nav_apply">立即報名</a>
         </div>
@@ -143,6 +155,7 @@
         <div class="flex space-x-8 text-3xl pt-4">
             <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.youtube.com/@lawrencetambass" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://carousell.app.link/aXB4DWi7z1b" target="_blank"><i class="fas fa-shopping-bag"></i></a>
         </div>
         <a href="https://forms.gle/xk7CkR2RhxB2kfZd7" target="_blank" onclick="toggleMenu()" class="px-8 py-2 border border-[#d4af37] gold-text font-bold" data-i18n="nav_apply">立即報名</a>
     </div>
@@ -259,6 +272,11 @@
                 <p class="text-gray-400 mb-10 leading-loose text-lg max-w-4xl mx-auto" data-i18n="craft_p">
                     在芝加哥期間，隨著名造琴大賽評判 Antoine Nédélec 及資深導師 Kristin Siegfried-Ballenger 深造，專研小、中、大提琴製作。這種背景讓譚老師能從物理構造層面解決學生的音色問題。
                 </p>
+                <div class="flex justify-center mb-12">
+                     <a href="https://carousell.app.link/aXB4DWi7z1b" target="_blank" class="inline-flex items-center gap-2 border border-white/30 px-6 py-3 rounded hover:bg-white hover:text-black transition-all">
+                        <i class="fas fa-shopping-cart"></i> <span data-i18n="btn_carousell">前往 Carousell 專業網店</span>
+                     </a>
+                </div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 items-stretch">
@@ -349,38 +367,48 @@
 
     <!-- 聯絡與腳部 -->
     <section id="contact" class="py-24 bg-gray-900 text-white px-6 md:px-20">
-        <div class="max-w-4xl mx-auto text-center">
+        <div class="max-w-6xl mx-auto text-center">
             <h3 class="text-4xl font-bold serif mb-8 gold-text" data-i18n="contact_title">聯絡及諮詢</h3>
-            <p class="text-gray-400 mb-12 text-lg" data-i18n="contact_desc">歡迎透過以下方式聯繫，或直接填寫報名表格。</p>
-            <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-12 mb-16">
+            <p class="text-gray-400 mb-12 text-lg" data-i18n="contact_desc">歡迎透過以下方式聯繫，或直接填寫報名表格與逛逛商店。</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
                 <!-- 郵件區：改為點擊複製 -->
                 <div onclick="copyEmail()" class="cursor-pointer group flex flex-col items-center gap-4 hover:scale-105 transition-all">
-                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center text-black text-3xl group-hover:bg-yellow-500 shadow-xl">
+                    <div class="w-16 h-16 md:w-20 md:h-20 gold-bg rounded-full flex items-center justify-center text-black text-2xl md:text-3xl group-hover:bg-yellow-500 shadow-xl">
                         <i class="fas fa-copy"></i>
                     </div>
                     <div>
-                        <p class="text-sm text-gray-500 uppercase font-bold tracking-widest mb-1" data-i18n="email_label">電子郵件 (點擊複製)</p>
-                        <p class="text-xl font-medium">lawrence.tam@chicagoviolinshk.com</p>
+                        <p class="text-xs text-gray-500 uppercase font-bold tracking-widest mb-1" data-i18n="email_label">Email (點擊複製)</p>
+                        <p class="text-sm md:text-base font-medium break-all">lawrence.tam@chicagoviolinshk.com</p>
                     </div>
                 </div>
                 <!-- WhatsApp 區 -->
                 <a href="https://wa.me/85264473995" target="_blank" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
-                    <div class="w-20 h-20 gold-bg rounded-full flex items-center justify-center text-black text-3xl group-hover:bg-yellow-500 shadow-xl">
+                    <div class="w-16 h-16 md:w-20 md:h-20 gold-bg rounded-full flex items-center justify-center text-black text-2xl md:text-3xl group-hover:bg-yellow-500 shadow-xl">
                         <i class="fab fa-whatsapp"></i>
                     </div>
                     <div>
-                        <p class="text-sm text-gray-500 uppercase font-bold tracking-widest mb-1" data-i18n="wa_label">WhatsApp 諮詢</p>
-                        <p class="text-xl font-medium">+852 6447 3995</p>
+                        <p class="text-xs text-gray-500 uppercase font-bold tracking-widest mb-1" data-i18n="wa_label">WhatsApp</p>
+                        <p class="text-sm md:text-base font-medium">+852 6447 3995</p>
                     </div>
                 </a>
                 <!-- 表格區 -->
                 <a href="https://forms.gle/xk7CkR2RhxB2kfZd7" target="_blank" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
-                    <div class="w-20 h-20 bg-white text-black rounded-full flex items-center justify-center text-3xl group-hover:bg-gray-200 shadow-xl">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-white text-black rounded-full flex items-center justify-center text-2xl md:text-3xl group-hover:bg-gray-200 shadow-xl">
                         <i class="fas fa-file-alt"></i>
                     </div>
                     <div>
-                        <p class="text-sm text-gray-500 uppercase font-bold tracking-widest mb-1" data-i18n="form_label">線上報名表</p>
-                        <p class="text-xl font-medium" data-i18n="form_link_text">立即填寫</p>
+                        <p class="text-xs text-gray-500 uppercase font-bold tracking-widest mb-1" data-i18n="form_label">Enrollment Form</p>
+                        <p class="text-sm md:text-base font-medium" data-i18n="form_link_text">立即填寫</p>
+                    </div>
+                </a>
+                <!-- Carousell 區 -->
+                <a href="https://carousell.app.link/aXB4DWi7z1b" target="_blank" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl group-hover:bg-red-700 shadow-xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 uppercase font-bold tracking-widest mb-1" data-i18n="carousell_label">Carousell Store</p>
+                        <p class="text-sm md:text-base font-medium" data-i18n="carousell_link_text">前往商店</p>
                     </div>
                 </a>
             </div>
@@ -392,6 +420,7 @@
         <div class="flex justify-center space-x-10 text-2xl">
             <a href="https://www.facebook.com/LawrenceTamDoubleBass" target="_blank" class="hover:text-[#1877F2] transition-colors"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.youtube.com/@lawrencetambass" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
+            <a href="https://carousell.app.link/aXB4DWi7z1b" target="_blank" class="hover:text-red-500 transition-colors"><i class="fas fa-shopping-bag"></i></a>
             <a href="https://wa.me/85264473995" target="_blank" class="hover:text-green-500 transition-colors"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
@@ -430,7 +459,7 @@
                 card_3_title: "專業工藝", card_3_list: ["Chicago School of Violin Making 畢業", "師承名家 Antoine Nédélec", "破格提前完成三年制工藝課程", "提琴維修、調整與製作專家"],
                 price_title: "課程價目表", price_desc: "透明合理的收費，提供最優質的音樂教育與專業諮詢。",
                 price_note: "* 價格可能隨課程內容與學員程度有所調整，詳情請直接與譚老師聯繫。",
-                btn_whatsapp: "立即 WhatsApp 查詢", btn_form: "填寫線上報名表",
+                btn_whatsapp: "立即 WhatsApp 查詢", btn_form: "填寫線上報名表", btn_carousell: "前往 Carousell 專業網店",
                 craft_subtitle: "不只是演奏家，更是樂器醫師與職人。",
                 craft_p: "在芝加哥期間，深造小、中、大提琴製作。這種背景讓譚老師能從物理構造層面解決音色問題。",
                 craft_point1_title: "精通提琴音色調整", craft_point1_desc: "透過調整音柱位置與弦碼弧度，釋放樂器最佳音色。",
@@ -441,8 +470,9 @@
                 loc_addr_label: "工作室地址", loc_addr: "佐敦上海街26-28號<br>恒邦商業中心14樓5室",
                 loc_transport_label: "交通建議", loc_jordan: "佐敦站 C2 出口 (步行約 5 分鐘)", loc_austin: "柯士甸站 F 出口 (步行約 3 分鐘)",
                 btn_map: "在 Google Maps 中開啟", contact_title: "聯絡及諮詢", 
-                contact_desc: "歡迎透過以下方式聯繫，或直接填寫報名表格。",
-                email_label: "電子郵件 (點擊複製)", wa_label: "WhatsApp 諮詢", form_label: "線上報名表", form_link_text: "立即填寫"
+                contact_desc: "歡迎透過以下方式聯繫，或直接填寫報名表格與逛逛商店。",
+                email_label: "Email (點擊複製)", wa_label: "WhatsApp 諮詢", form_label: "線上報名表", form_link_text: "立即填寫",
+                carousell_label: "Carousell 網店", carousell_link_text: "前往商店"
             },
             en: {
                 nav_home: "Home", nav_about: "About", nav_qualifications: "Qualifications", nav_pricing: "Pricing", nav_craft: "Luthiery", nav_videos: "Videos", nav_location: "Location", nav_apply: "Enroll Now",
@@ -459,7 +489,7 @@
                 card_3_title: "Craftsmanship", card_3_list: ["CSVM Graduate", "Studied under Antoine Nédélec", "Fast-tracked completion", "Expert in repair & making"],
                 price_title: "Course Pricing", price_desc: "Transparent fees for quality education.",
                 price_note: "* Prices may vary. Contact Lawrence for details.",
-                btn_whatsapp: "WhatsApp Enquiry", btn_form: "Online Enrollment Form",
+                btn_whatsapp: "WhatsApp Enquiry", btn_form: "Online Enrollment Form", btn_carousell: "Visit Carousell Store",
                 craft_subtitle: "More than a performer, an instrument doctor.",
                 craft_p: "Studied in Chicago to solve sound issues from a structural perspective.",
                 craft_point1_title: "Sound Adjustment", craft_point1_desc: "Optimize tone through post and bridge adjustments.",
@@ -470,8 +500,9 @@
                 loc_addr_label: "Studio Address", loc_addr: "Hang Bong Commercial Centre, Jordan",
                 loc_transport_label: "Transportation", loc_jordan: "Jordan Stn C2 (5 min walk)", loc_austin: "Austin Stn F (3 min walk)",
                 btn_map: "Open in Maps", contact_title: "Contact", 
-                contact_desc: "Contact via following methods or fill out the form.",
-                email_label: "Email (Click to Copy)", wa_label: "WhatsApp", form_label: "Enrollment Form", form_link_text: "Fill in now"
+                contact_desc: "Contact via following methods, fill out the form, or visit my store.",
+                email_label: "Email (Click to Copy)", wa_label: "WhatsApp", form_label: "Enrollment Form", form_link_text: "Fill in now",
+                carousell_label: "Carousell Store", carousell_link_text: "Visit Now"
             }
         };
 
