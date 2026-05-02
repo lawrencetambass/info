@@ -90,17 +90,6 @@
 
         @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
         @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
-
-        /* 自定義 Carousell 圖示顏色 */
-        .fa-carousell {
-            position: relative;
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            background-color: currentColor;
-            -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2003/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.5c4.142 0 7.5 3.358 7.5 7.5s-3.358 7.5-7.5 7.5-7.5-3.358-7.5-7.5 3.358-7.5 7.5-7.5z'/%3E%3C/svg%3E") no-repeat center;
-            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2003/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.5c4.142 0 7.5 3.358 7.5 7.5s-3.358 7.5-7.5 7.5-7.5-3.358-7.5-7.5 3.358-7.5 7.5-7.5z'/%3E%3C/svg%3E") no-repeat center;
-        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -337,8 +326,8 @@
                         <div>
                             <h4 class="text-xl font-bold mb-2" data-i18n="loc_addr_label">工作室地址</h4>
                             <p class="text-gray-600 leading-relaxed" data-i18n="loc_addr">
-                                佐敦上海街26-28號<br>
-                                恒邦商業中心14樓5室
+                                佐敦上海街 26-28 號<br>
+                                恒邦商業中心 5 樓 7 室
                             </p>
                         </div>
                     </div>
@@ -354,12 +343,13 @@
                             </div>
                         </div>
                     </div>
-                    <a href="https://maps.app.goo.gl/M45vuArd74tRZd7i6" target="_blank" class="inline-flex items-center justify-center bg-gray-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-black transition-all">
+                    <a href="https://maps.app.goo.gl/9y5H6C5G88nC9mR47" target="_blank" class="inline-flex items-center justify-center bg-gray-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-black transition-all">
                         <i class="fas fa-external-link-alt mr-2"></i> <span data-i18n="btn_map">在 Google Maps 中開啟</span>
                     </a>
                 </div>
                 <div class="md:w-1/2 bg-gray-200 h-80 md:h-auto relative">
-                    <iframe src="https://maps.google.com/maps?q=%E6%81%92%E9%82%A6%E5%95%86%E6%A5%AD%E4%B8%AD%E5%BF%83&t=&z=17&ie=UTF8&iwloc=&output=embed" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+                    <!-- Google Maps 嵌入連結已同步更新位置資訊 -->
+                    <iframe src="https://maps.google.com/maps?q=%E4%BD%90%E6%95%A6%E4%B8%8A%E6%B5%B7%E8%A1%9726-28%E8%99%9F%E6%81%92%E9%82%A6%E5%95%86%E6%A5%AD%E4%B8%AD%E5%BF%83&t=&z=17&ie=UTF8&iwloc=&output=embed" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -371,7 +361,6 @@
             <h3 class="text-4xl font-bold serif mb-8 gold-text" data-i18n="contact_title">聯絡及諮詢</h3>
             <p class="text-gray-400 mb-12 text-lg" data-i18n="contact_desc">歡迎透過以下方式聯繫，或直接填寫報名表格與逛逛商店。</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-                <!-- 郵件區：改為點擊複製 -->
                 <div onclick="copyEmail()" class="cursor-pointer group flex flex-col items-center gap-4 hover:scale-105 transition-all">
                     <div class="w-16 h-16 md:w-20 md:h-20 gold-bg rounded-full flex items-center justify-center text-black text-2xl md:text-3xl group-hover:bg-yellow-500 shadow-xl">
                         <i class="fas fa-copy"></i>
@@ -381,7 +370,6 @@
                         <p class="text-sm md:text-base font-medium break-all">lawrence.tam@chicagoviolinshk.com</p>
                     </div>
                 </div>
-                <!-- WhatsApp 區 -->
                 <a href="https://wa.me/85264473995" target="_blank" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
                     <div class="w-16 h-16 md:w-20 md:h-20 gold-bg rounded-full flex items-center justify-center text-black text-2xl md:text-3xl group-hover:bg-yellow-500 shadow-xl">
                         <i class="fab fa-whatsapp"></i>
@@ -391,7 +379,6 @@
                         <p class="text-sm md:text-base font-medium">+852 6447 3995</p>
                     </div>
                 </a>
-                <!-- 表格區 -->
                 <a href="https://forms.gle/xk7CkR2RhxB2kfZd7" target="_blank" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
                     <div class="w-16 h-16 md:w-20 md:h-20 bg-white text-black rounded-full flex items-center justify-center text-2xl md:text-3xl group-hover:bg-gray-200 shadow-xl">
                         <i class="fas fa-file-alt"></i>
@@ -401,7 +388,6 @@
                         <p class="text-sm md:text-base font-medium" data-i18n="form_link_text">立即填寫</p>
                     </div>
                 </a>
-                <!-- Carousell 區 -->
                 <a href="https://carousell.app.link/aXB4DWi7z1b" target="_blank" class="group flex flex-col items-center gap-4 hover:scale-105 transition-all">
                     <div class="w-16 h-16 md:w-20 md:h-20 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl md:text-3xl group-hover:bg-red-700 shadow-xl">
                         <i class="fas fa-shopping-bag"></i>
@@ -426,7 +412,6 @@
     </footer>
 
     <script>
-        // --- 複製郵件功能 ---
         function copyEmail() {
             const email = "lawrence.tam@chicagoviolinshk.com";
             const el = document.createElement('textarea');
@@ -435,14 +420,12 @@
             el.select();
             document.execCommand('copy');
             document.body.removeChild(el);
-            
             const toast = document.getElementById("copy-toast");
             toast.innerHTML = currentLang === 'zh' ? "已複製郵件地址！" : "Email address copied!";
             toast.className = "show";
             setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
         }
 
-        // --- 語言資料庫 ---
         const i18n = {
             zh: {
                 nav_home: "首頁", nav_about: "個人簡介", nav_qualifications: "專業資格", nav_pricing: "價目表", nav_craft: "提琴製作", nav_videos: "示範影片", nav_location: "上課地點", nav_apply: "立即報名",
@@ -467,7 +450,7 @@
                 video_title: "關注社交平台與示範片段", video_desc: "定期在平台分享演奏技巧、練習指引以及樂器製作心得。",
                 yt_channel: "YouTube 頻道", fb_page: "Facebook 專頁",
                 loc_title: "上課地點", loc_desc: "工作室位於佐敦區，環境專業安靜。",
-                loc_addr_label: "工作室地址", loc_addr: "佐敦上海街26-28號<br>恒邦商業中心14樓5室",
+                loc_addr_label: "工作室地址", loc_addr: "佐敦上海街 26-28 號<br>恒邦商業中心 5 樓 7 室",
                 loc_transport_label: "交通建議", loc_jordan: "佐敦站 C2 出口 (步行約 5 分鐘)", loc_austin: "柯士甸站 F 出口 (步行約 3 分鐘)",
                 btn_map: "在 Google Maps 中開啟", contact_title: "聯絡及諮詢", 
                 contact_desc: "歡迎透過以下方式聯繫，或直接填寫報名表格與逛逛商店。",
@@ -497,7 +480,7 @@
                 video_title: "Social Media", video_desc: "Sharing performance techniques and luthier tips.",
                 yt_channel: "YouTube Channel", fb_page: "Facebook Page",
                 loc_title: "Location", loc_desc: "Studio in Jordan, professional and quiet.",
-                loc_addr_label: "Studio Address", loc_addr: "Hang Bong Commercial Centre, Jordan",
+                loc_addr_label: "Studio Address", loc_addr: "Room 7, 5/F, Hang Bong Commercial Centre, Jordan",
                 loc_transport_label: "Transportation", loc_jordan: "Jordan Stn C2 (5 min walk)", loc_austin: "Austin Stn F (3 min walk)",
                 btn_map: "Open in Maps", contact_title: "Contact", 
                 contact_desc: "Contact via following methods, fill out the form, or visit my store.",
